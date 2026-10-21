@@ -23,8 +23,8 @@ export default function Header() {
 
   return (
     <header data-situs className="sticky top-0 z-40 border-b border-garis bg-kapur/95 backdrop-blur-[2px]">
-      <div className="wadah flex h-16 items-center gap-3 sm:h-[4.25rem]">
-        <Link href="/" className="shrink-0 rounded-md text-tinta" aria-label="Daun Jendela, ke beranda">
+      <div className="wadah flex h-16 items-center gap-2 sm:h-[4.25rem] sm:gap-3">
+        <Link href="/" className="min-w-0 shrink rounded-md text-tinta" aria-label="Daun Jendela, ke beranda">
           <Logo />
         </Link>
 
@@ -46,13 +46,13 @@ export default function Header() {
 
         <Link
           href="/keranjang"
-          className="ms-auto flex min-h-11 min-w-11 items-center justify-center gap-2 rounded-full px-3 py-2 font-medium hover:bg-kapur-2 lg:ms-2"
+          className="ms-auto flex min-h-11 min-w-11 shrink-0 items-center justify-center gap-1.5 rounded-full px-2 py-2 font-medium hover:bg-kapur-2 sm:gap-2 sm:px-3 lg:ms-2"
           aria-current={path === '/keranjang' ? 'page' : undefined}
         >
-          <IkonTas className="h-6 w-6" />
+          <IkonTas className="h-6 w-6 shrink-0" />
           <span className="sr-only sm:not-sr-only">Keranjang</span>{' '}
           <span
-            className={`inline-flex h-6 min-w-6 items-center justify-center rounded-full px-1.5 text-[0.75rem] font-semibold tabular-nums ${
+            className={`inline-flex h-6 min-w-6 shrink-0 items-center justify-center rounded-full px-1.5 text-[0.75rem] font-semibold tabular-nums ${
               jumlah ? 'bg-daun text-white' : 'bg-kapur-2 text-tinta-2'
             }`}
           >
@@ -63,19 +63,19 @@ export default function Header() {
 
         <button
           type="button"
-          className="flex min-h-11 min-w-11 items-center justify-center gap-2 rounded-full px-3 py-2 font-medium hover:bg-kapur-2 lg:hidden"
+          className="flex min-h-11 min-w-11 shrink-0 items-center justify-center gap-2 rounded-full px-2 py-2 font-medium hover:bg-kapur-2 sm:px-3 lg:hidden"
           aria-expanded={buka}
           aria-controls="menu-ponsel"
           onClick={() => setBuka((b) => !b)}
         >
-          <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true" focusable="false">
+          <svg viewBox="0 0 24 24" className="h-5 w-5 shrink-0" aria-hidden="true" focusable="false">
             {buka ? (
               <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
             ) : (
               <path d="M4 8h16M4 16h16" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
             )}
           </svg>
-          <span className="max-[359px]:sr-only">Menu</span>
+          <span className="max-[389px]:sr-only">Menu</span>
         </button>
       </div>
 

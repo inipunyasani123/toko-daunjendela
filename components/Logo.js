@@ -14,9 +14,9 @@ export function TandaJendela({ className = '', daun = '#8fb36f' }) {
 export default function Logo({ className = '', ukuran = 'sedang' }) {
   const besar = ukuran === 'besar';
   return (
-    <span className={`inline-flex items-center gap-2.5 ${className}`}>
-      <TandaJendela className={besar ? 'h-11 w-10' : 'h-8 w-7 sm:h-9 sm:w-8'} />
-      <span className={`font-display font-semibold leading-none tracking-[-0.02em] ${besar ? 'text-[2.1rem]' : 'text-[1.35rem] sm:text-[1.5rem]'}`}>
+    <span className={`inline-flex items-center gap-2 sm:gap-2.5 ${className}`}>
+      <TandaJendela className={`shrink-0 ${besar ? 'h-11 w-10' : 'h-8 w-7 sm:h-9 sm:w-8'}`} />
+      <span className={`font-display font-semibold leading-none tracking-[-0.02em] ${besar ? 'text-[2.1rem]' : 'whitespace-nowrap text-[1.12rem] min-[360px]:text-[1.25rem] sm:text-[1.5rem]'}`}>
         Daun Jendela
       </span>
     </span>
