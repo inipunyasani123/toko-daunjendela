@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { GambarProduk } from './FotoProduk';
-import { Pot } from './Ilustrasi';
+import { Pot } from './FotoPot';
 import { TandaHewan, TandaRawat } from './Tanda';
 import { cariProduk, cariPotJenis, site } from '@/lib/data';
 import { hargaVarian, stokVarian, ukuranAwal, produkAktif, pilihanPot, ukuranProduk, teksCahaya } from '@/lib/katalog';
@@ -119,7 +119,7 @@ export default function DetailProduk({ slug }) {
                 {tampil === 'dekat' && p.foto ? (
                   <Image src={p.foto.src} alt={`${p.foto.alt}, diperbesar`} fill sizes="(min-width: 1024px) 50vw, 100vw" className="scale-[1.9] object-contain object-[50%_30%]" />
                 ) : (
-                  <GambarProduk p={p} sizes="(min-width: 1024px) 40vw, 78vw" prioritas judul={tanaman ? undefined : `Ilustrasi ${p.nama}`} />
+                  <GambarProduk p={p} sizes="(min-width: 1024px) 40vw, 78vw" prioritas judul={tanaman ? undefined : `Foto ${p.nama}`} />
                 )}
                 {tampil === 'ukuran' && <Penggaris cm={cm} />}
               </div>

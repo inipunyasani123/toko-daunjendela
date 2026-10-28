@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Pot } from './Ilustrasi';
+import { Pot } from './FotoPot';
 import StrataMedia from './StrataMedia';
 import { potJenis, racikan } from '@/lib/data';
 import { tanamanUntukPot, tanamanUntukRacikan } from '@/lib/katalog';

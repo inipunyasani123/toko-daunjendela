@@ -21,7 +21,7 @@ Toko online demo untuk paket **Toko Online** PintuWeb. Daun Jendela adalah kebun
 
 - **Huruf:** Besley (judul, nama Latin miring) dan Instrument Sans (teks; sumbu lebar untuk label tancap), lewat `next/font`.
 - **Motif:** jendela lengkung berpalang, bayangan daun dan kisi krepyak di dinding kapur, pita cahaya lima tingkat, label tancap berujung runcing.
-- **Gambar:** foto CC0 yang subjeknya dipotong dari latar lalu ditampilkan di "panggung" yang sama; pot, kantong media, dan diagram kemasan digambar sebagai SVG. Rinciannya di `public/images/SUMBER.md`.
+- **Gambar:** foto CC0 yang subjeknya dipotong dari latar lalu ditampilkan di "panggung" yang sama; pot, media tanam, semprotan, dan tusuk bambu juga foto CC0 (dipotong dari latar); hanya logo dan diagram kemasan yang SVG. Rinciannya di `public/images/SUMBER.md`.
 
 ## Gambar statis
 

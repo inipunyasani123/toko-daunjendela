@@ -1,9 +1,21 @@
 import Image from 'next/image';
-import { Pot, KantongMedia, Semprotan, TusukBambu } from './Ilustrasi';
 
 // Panggung foto produk: dinding bercahaya jendela + bayangan lantai. Foto tanaman sudah dipotong dari latar
 // aslinya, jadi semua produk tampil di "ruangan" yang sama.
 export function GambarProduk({ p, sizes = '(min-width: 1024px) 25vw, 50vw', prioritas = false, judul }) {
+  if (p.foto?.penuh) {
+    return (
+      <Image
+        src={p.foto.src}
+        alt={judul ?? p.foto.alt}
+        fill
+        sizes={sizes}
+        priority={prioritas}
+        fetchPriority={prioritas ? 'high' : undefined}
+        className="object-cover"
+      />
+    );
+  }
   if (p.foto?.potong) {
     const tata = p.foto.tata;
     const kotak =
@@ -22,12 +34,7 @@ export function GambarProduk({ p, sizes = '(min-width: 1024px) 25vw, 50vw', prio
       </span>
     );
   }
-  const label = judul ?? `Ilustrasi ${p.nama}`;
-  const kelas = 'absolute inset-x-[12%] bottom-[5%] top-[10%] h-[85%] w-[76%]';
-  if (p.jenis === 'pot') return <Pot jenis={p.pot} tanah={false} judul={label || undefined} className={kelas} />;
-  if (p.jenis === 'media') return <KantongMedia racikan={p.racikan} judul={label || undefined} className={kelas} />;
-  if (p.slug === 'semprotan-embun') return <Semprotan judul={label || undefined} className={kelas} />;
-  return <TusukBambu judul={label || undefined} className={kelas} />;
+  return null;
 }
 
 export default function FotoProduk({ p, className = '', varian = '', ...rest }) {

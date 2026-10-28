@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Pot } from '@/components/Ilustrasi';
+import { Pot } from '@/components/FotoPot';
 
 export const metadata = {
   title: 'Halaman tidak ditemukan',
@@ -13,12 +13,7 @@ export default function TidakDitemukan() {
       <div className="relative mx-auto aspect-[4/5] w-full max-w-xs lg:col-span-5">
         <div aria-hidden="true" className="panggung lengkung absolute inset-0 overflow-hidden">
           <div className="absolute inset-0 bg-[url(/images/latar/bayang-daun.webp)] bg-cover opacity-70 mix-blend-multiply" />
-          <Pot jenis="terakota" className="absolute inset-x-[16%] bottom-[5%] h-[52%] w-[68%]" />
-          <svg viewBox="0 0 100 100" className="absolute bottom-[33%] left-[37%] h-[20%] w-[26%]" aria-hidden="true">
-            <path d="M50 96 C50 70 48 50 52 30" fill="none" stroke="#2c7556" strokeWidth="4" strokeLinecap="round" />
-            <path d="M51 46 C36 40 26 28 24 12 C40 16 50 28 51 46 Z" fill="#8fb36f" />
-            <path d="M52 32 C62 20 76 16 88 18 C82 30 68 36 52 32 Z" fill="#8fb36f" />
-          </svg>
+          <Pot jenis="terakota" className="absolute inset-x-[14%] bottom-[6%] h-[62%] w-[72%]" />
         </div>
       </div>
       <div className="lg:col-span-6 lg:col-start-7">
