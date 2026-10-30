@@ -37,7 +37,7 @@ export default function MingguIni() {
           return (
             <li key={k} className={`flex min-h-[8.5rem] flex-col rounded-xl p-1.5 sm:p-2.5 ${i === 0 ? 'bg-embun ring-1 ring-daun/40' : 'bg-kapur'}`}>
               <p className="text-center leading-tight sm:text-start">
-                <span className="block text-[0.7rem] font-semibold uppercase tracking-wide text-tinta-2 sm:text-[0.75rem]">{i === 0 ? 'Hari ini' : hariPendek(d)}</span>
+                <span className="block text-[0.75rem] font-semibold uppercase tracking-wide text-tinta-2 sm:text-[0.75rem]">{i === 0 ? 'Hari ini' : hariPendek(d)}</span>
                 <span className="block text-[0.78rem] tabular-nums sm:text-[0.9rem]">{tanggalPendek(d)}</span>
               </p>
               <ul className="mt-2 grid justify-items-center gap-1.5 sm:justify-items-start">
@@ -57,7 +57,7 @@ export default function MingguIni() {
                     </li>
                   );
                 })}
-                {!isi.length && <li className="text-[0.72rem] text-tinta-3">Libur</li>}
+                {!isi.length && <li className="text-[0.75rem] text-tinta-3">Libur</li>}
               </ul>
             </li>
           );

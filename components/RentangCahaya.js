@@ -13,15 +13,15 @@ export default function RentangCahaya() {
   return (
     <div className="overflow-hidden rounded-[1.5rem] border border-garis bg-kertas">
       <div className="relative grid grid-cols-[8.6rem_minmax(0,1fr)] sm:grid-cols-[13.5rem_minmax(0,1fr)]">
-        <div aria-hidden="true" className="flex items-end border-b border-garis px-3 pb-3 text-[0.72rem] text-tinta-2 sm:text-[0.8rem]">Jendela → sudut</div>
+        <div aria-hidden="true" className="flex items-end border-b border-garis px-3 pb-3 text-[0.75rem] text-tinta-2 sm:text-[0.8rem]">Jendela → sudut</div>
         <div className="relative grid grid-cols-5 border-b border-garis" aria-hidden="true">
           <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,#fdf3cf_0%,#f6f3e2_45%,#e7ece4_75%,#dde5df_100%)]" />
           <div className="bayang-kisi pointer-events-none absolute inset-y-0 left-0 w-2/5 opacity-80" />
           {KOLOM.map((n, i) => (
             <div key={n} className={`relative px-0.5 py-2.5 text-center sm:px-2 sm:py-3 ${i ? 'border-s border-garis/70' : ''}`}>
               <span className="mx-auto block h-2.5 w-2.5 rounded-full" style={{ background: WARNA_CAHAYA[n], boxShadow: 'inset 0 0 0 1px rgb(21 50 42 / .3)' }} />
-              <span className="mt-1.5 block text-[0.62rem] font-semibold leading-tight sm:text-[0.8rem]">{cahaya[n - 1].nama}</span>
-              <span className="mt-0.5 hidden text-[0.72rem] leading-tight text-tinta-2 md:block">{cahaya[n - 1].bayangan}</span>
+              <span className="mt-1.5 block text-[0.75rem] font-semibold leading-tight sm:text-[0.8rem]">{cahaya[n - 1].nama}</span>
+              <span className="mt-0.5 hidden text-[0.75rem] leading-tight text-tinta-2 md:block">{cahaya[n - 1].bayangan}</span>
             </div>
           ))}
         </div>

@@ -97,7 +97,7 @@ export default function Penemu() {
         {pertanyaan.map((q, i) => (
           <fieldset key={q.id} className="rounded-[1.25rem] border border-garis bg-kertas p-4 sm:p-5">
             <legend className="float-left w-full">
-              <span className="rapat block text-[0.7rem] text-tinta-2">Pertanyaan {i + 1} dari {pertanyaan.length}</span>
+              <span className="rapat block text-[0.75rem] text-tinta-2">Pertanyaan {i + 1} dari {pertanyaan.length}</span>
               <span className="mt-1 block font-display text-[1.35rem] font-semibold leading-snug">{q.judul}</span>
             </legend>
             <p className="clear-both pt-1 text-[0.86rem] text-tinta-2">{q.bantu}</p>
@@ -111,7 +111,7 @@ export default function Penemu() {
                     checked={j[q.id] === o.nilai}
                     onChange={() => ubah(q.id, o.nilai)}
                     onClick={() => j[q.id] === o.nilai && ubah(q.id, o.nilai)}
-                    className="mt-1 h-[1.05rem] w-[1.05rem] shrink-0 accent-[#1f5c43]"
+                    className="mt-1 h-[1.25rem] w-[1.25rem] shrink-0 accent-[#1f5c43]"
                   />
                   {q.id === 'cahaya' && (
                     <span aria-hidden="true" className="mt-0.5 h-6 w-6 shrink-0 rounded-md ring-1 ring-tinta/20" style={{ background: WARNA_CAHAYA[Number(o.nilai)] }} />

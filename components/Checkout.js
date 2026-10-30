@@ -227,7 +227,7 @@ export default function Checkout() {
                       type="radio"
                       name="layanan"
                       value={l.id}
-                      className="mt-1 h-[1.1rem] w-[1.1rem] accent-[#1f5c43]"
+                      className="mt-1 h-[1.25rem] w-[1.25rem] accent-[#1f5c43]"
                       checked={layananAktif === l.id && !tidak}
                       disabled={Boolean(tidak)}
                       onChange={() => setLayanan(l.id)}
@@ -292,7 +292,7 @@ export default function Checkout() {
             Untuk orang lain?
           </h2>
           <label className="pilih mt-4 flex cursor-pointer items-start gap-3 p-3.5">
-            <input type="checkbox" className="mt-1 h-[1.1rem] w-[1.1rem] accent-[#1f5c43]" checked={hadiah.aktif} onChange={(e) => setHadiah((h) => ({ ...h, aktif: e.target.checked }))} />
+            <input type="checkbox" className="mt-1 h-[1.25rem] w-[1.25rem] accent-[#1f5c43]" checked={hadiah.aktif} onChange={(e) => setHadiah((h) => ({ ...h, aktif: e.target.checked }))} />
             <span>
               <span className="font-medium">Kirim sebagai hadiah</span>
               <span className="block text-[0.85rem] text-tinta-2">Tanpa nota harga di dalam kardus, ditambah kartu ucapan tulisan tangan.</span>
@@ -337,7 +337,7 @@ export default function Checkout() {
                     type="radio"
                     name="metode"
                     value={m.id}
-                    className="mt-1 h-[1.1rem] w-[1.1rem] accent-[#1f5c43]"
+                    className="mt-1 h-[1.25rem] w-[1.25rem] accent-[#1f5c43]"
                     checked={f.metode === m.id}
                     onChange={() => {
                       setF((x) => ({ ...x, metode: m.id }));

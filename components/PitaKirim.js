@@ -26,7 +26,7 @@ export default function PitaKirim() {
               : `Dibayar sekarang, dikirim ${tanggalPanjang(j.tanggal)}.`
             : 'Supaya tidak menginap di gudang kurir.'}
         </span>
-        <Link href="/pengiriman#jadwal" className="underline decoration-[#e4ece4]/60 underline-offset-[3px] hover:decoration-white">
+        <Link href="/pengiriman#jadwal" className="inline-block py-1 underline decoration-[#e4ece4]/60 underline-offset-[3px] hover:decoration-white">
           Kenapa?
         </Link>
       </p>

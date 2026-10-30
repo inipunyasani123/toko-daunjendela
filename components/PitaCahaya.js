@@ -36,7 +36,7 @@ export default function PitaCahaya({ p, varian = 'kecil', className = '' }) {
             />
           ))}
         </div>
-        <ol className="mt-2 grid grid-cols-5 gap-1 text-center text-[0.72rem] leading-tight" aria-hidden="true">
+        <ol className="mt-2 grid grid-cols-5 gap-1 text-center text-[0.75rem] leading-tight" aria-hidden="true">
           {URUT.map((n) => (
             <li key={n} className={masuk(n) ? 'font-semibold text-tinta' : 'text-tinta-3'}>
               {cahaya[n - 1].nama}

@@ -56,7 +56,7 @@ export default function DiagramKemasan({ ringkas = false }) {
             <span className="block h-14 w-14 shrink-0 rounded-xl bg-kapur p-1">
               <Gambar id={l.id} />
             </span>
-            <span className="rapat text-[0.7rem] text-tinta-2">Langkah {i + 1}</span>
+            <span className="rapat text-[0.75rem] text-tinta-2">Langkah {i + 1}</span>
           </div>
           <h3 className="mt-3 font-sans text-[1rem] font-semibold tracking-normal">{l.judul}</h3>
           <p className={`mt-1 text-[0.85rem] text-tinta-2 ${ringkas ? 'max-sm:hidden' : ''}`}>{l.isi}</p>

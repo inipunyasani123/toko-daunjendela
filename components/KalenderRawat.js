@@ -107,7 +107,7 @@ export default function KalenderRawat() {
             {tanaman.map((p) => (
               <li key={p.slug}>
                 <label className="flex min-h-11 cursor-pointer items-center gap-3 rounded-lg px-1 py-1 hover:bg-kapur-2">
-                  <input type="checkbox" className="h-[1.1rem] w-[1.1rem] accent-[#1f5c43]" checked={pilih.includes(p.slug)} onChange={() => balik(p.slug)} />
+                  <input type="checkbox" className="h-[1.25rem] w-[1.25rem] accent-[#1f5c43]" checked={pilih.includes(p.slug)} onChange={() => balik(p.slug)} />
                   <span className={`panggung relative block h-10 w-8 shrink-0 overflow-hidden rounded-md after:hidden`}>
                     <GambarProduk p={p} sizes="40px" judul="" />
                   </span>
@@ -189,7 +189,7 @@ export default function KalenderRawat() {
                               {isi.map((t, i) => {
                                 const Ikon = IKON_TUGAS[t.tugas];
                                 return (
-                                  <li key={`${t.slug}-${t.tugas}-${i}`} className="flex items-start gap-1 text-[0.72rem] leading-tight">
+                                  <li key={`${t.slug}-${t.tugas}-${i}`} className="flex items-start gap-1 text-[0.75rem] leading-tight">
                                     <span className="flex h-4.5 w-4.5 shrink-0 items-center justify-center rounded-full text-white" style={{ background: TUGAS[t.tugas].warna }}>
                                       <Ikon className="h-2.5 w-2.5" />
                                     </span>

@@ -28,7 +28,7 @@ function Ubin({ r, besar }) {
       <span className="relative mt-auto block p-4 text-white sm:p-5">
         <span className={`block font-display font-semibold leading-tight ${besar ? 'text-[1.7rem] sm:text-[2.1rem]' : 'text-[1.2rem] sm:text-[1.4rem]'}`}>{r.nama}</span>
         <span className="mt-1 block text-[0.85rem] leading-snug text-[#e3ebe5]">{r.ket}</span>
-        <span className="rapat mt-2.5 inline-block rounded-full bg-white/15 px-2.5 py-1 text-[0.68rem] text-white">{n} tanaman cocok</span>
+        <span className="rapat mt-2.5 inline-block rounded-full bg-white/15 px-2.5 py-1 text-[0.75rem] text-white">{n} tanaman cocok</span>
       </span>
     </Link>
   );

@@ -20,9 +20,9 @@ export default function KartuProduk({ produk: p, inventaris, judulTag = 'h3', si
           prioritas={prioritas}
           className="lengkung aspect-[4/5] transition-transform duration-500 ease-out group-hover:-translate-y-1 motion-reduce:transform-none"
         />
-        {stok === 0 && <p className="rapat absolute right-3 top-[18%] rounded-full bg-tinta px-2.5 py-1 text-[0.66rem] text-white">Habis</p>}
+        {stok === 0 && <p className="rapat absolute right-3 top-[18%] rounded-full bg-tinta px-2.5 py-1 text-[0.75rem] text-white">Habis</p>}
         {stok !== null && stok > 0 && stok <= 3 && (
-          <p className="rapat absolute right-3 top-[18%] rounded-full bg-kertas px-2.5 py-1 text-[0.66rem] text-awas shadow-sm">Sisa {stok}</p>
+          <p className="rapat absolute right-3 top-[18%] rounded-full bg-kertas px-2.5 py-1 text-[0.75rem] text-awas shadow-sm">Sisa {stok}</p>
         )}
       </div>
       <div className="flex flex-1 flex-col pt-3">

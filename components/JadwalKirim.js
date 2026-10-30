@@ -34,17 +34,17 @@ export default function JadwalKirim() {
               } ${kirimBerikut ? 'ring-[3px] ring-cahaya ring-offset-2 ring-offset-kertas' : ''}`}
               aria-current={sekarang ? 'date' : undefined}
             >
-              <span className="block text-[0.72rem] font-semibold leading-tight sm:text-[0.85rem]">
+              <span className="block text-[0.75rem] font-semibold leading-tight sm:text-[0.85rem]">
                 <span className="sm:hidden">{NAMA[hm].slice(0, 3)}</span>
                 <span className="hidden sm:inline">{NAMA[hm]}</span>
-                {tgl !== null && <span className="block text-[0.68rem] font-normal tabular-nums opacity-90 sm:text-[0.75rem]">{tanggalPendek(tgl)}</span>}
+                {tgl !== null && <span className="block text-[0.75rem] font-normal tabular-nums opacity-90 sm:text-[0.75rem]">{tanggalPendek(tgl)}</span>}
               </span>
-              <span className="mt-1 block text-[0.65rem] leading-tight sm:text-[0.75rem]">
+              <span className="mt-1 block text-[0.75rem] leading-tight sm:text-[0.75rem]">
                 <span className="sm:hidden">{tanaman ? 'Kirim' : lain ? 'Pot' : 'Libur'}</span>
                 <span className="hidden sm:inline">{tanaman ? 'Tanaman' : lain ? 'Pot & media' : 'Libur'}</span>
               </span>
               {sekarang && (
-                <span className="rapat absolute -top-2 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-tinta px-1.5 py-0.5 text-[0.55rem] text-white sm:left-2 sm:translate-x-0">
+                <span className="rapat absolute -top-2 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-tinta px-1.5 py-0.5 text-[0.75rem] text-white sm:left-2 sm:translate-x-0">
                   Hari ini
                 </span>
               )}

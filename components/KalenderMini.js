@@ -31,8 +31,8 @@ export default function KalenderMini({ slug, nama }) {
           const isi = jadwal[t.kunci];
           return (
             <li key={t.kunci} className={`flex min-h-[4.6rem] flex-col items-center rounded-lg p-1 text-center ${t.i === 0 ? 'bg-embun ring-1 ring-daun/40' : 'bg-kapur'}`}>
-              <span className="text-[0.62rem] font-semibold uppercase leading-tight text-tinta-2">{t.i === 0 ? 'Tiba' : hariPendek(t.ms)}</span>
-              <span className="text-[0.7rem] tabular-nums leading-tight">{tanggalPendek(t.ms)}</span>
+              <span className="text-[0.75rem] font-semibold uppercase leading-tight text-tinta-2">{t.i === 0 ? 'Tiba' : hariPendek(t.ms)}</span>
+              <span className="text-[0.75rem] tabular-nums leading-tight">{tanggalPendek(t.ms)}</span>
               <span className="mt-1 flex flex-wrap justify-center gap-0.5">
                 {isi.map((x) => {
                   const Ikon = IKON_TUGAS[x.tugas];

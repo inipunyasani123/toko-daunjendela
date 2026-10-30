@@ -30,7 +30,7 @@ function Penggaris({ cm }) {
       {garis.map((v) => (
         <div key={v} className="absolute left-3 flex items-center" style={{ bottom: `${(v / cm) * 100}%`, transform: 'translateY(50%)' }}>
           <span className="h-[2px] w-3 bg-tinta/70" />
-          <span className="ms-1 text-[0.68rem] font-semibold tabular-nums text-tinta">{v}</span>
+          <span className="ms-1 text-[0.75rem] font-semibold tabular-nums text-tinta">{v}</span>
         </div>
       ))}
     </div>
@@ -124,7 +124,7 @@ export default function DetailProduk({ slug }) {
                 {tampil === 'ukuran' && <Penggaris cm={cm} />}
               </div>
               {tanaman && (
-                <p className="rapat absolute left-4 top-[16%] rounded-full bg-kertas/90 px-2.5 py-1 text-[0.64rem] text-tinta-2">
+                <p className="rapat absolute left-4 top-[16%] rounded-full bg-kertas/90 px-2.5 py-1 text-[0.75rem] text-tinta-2">
                   {tampil === 'ukuran' ? `${ukuran.label} · ${ukuran.tinggi}` : 'Foto contoh tanaman sejenis'}
                 </p>
               )}

@@ -70,7 +70,7 @@ export function GridStatis() {
 function Centang({ label, checked, onChange, warna, jumlah }) {
   return (
     <label className="flex min-h-10 cursor-pointer items-center gap-3 rounded-lg px-1 py-1 hover:bg-kapur-2">
-      <input type="checkbox" className="h-[1.1rem] w-[1.1rem] accent-[#1f5c43]" checked={checked} onChange={onChange} />
+      <input type="checkbox" className="h-[1.25rem] w-[1.25rem] accent-[#1f5c43]" checked={checked} onChange={onChange} />
       {warna && <span aria-hidden="true" className="h-3.5 w-3.5 rounded-[3px] ring-1 ring-tinta/25" style={{ background: warna }} />}
       <span className="leading-tight">{label}</span>
       {jumlah !== undefined && <span className="ms-auto text-[0.78rem] tabular-nums text-tinta-3">{jumlah}</span>}
@@ -149,7 +149,7 @@ export default function Katalog() {
         <div className="flex flex-wrap items-center gap-3 lg:hidden">
           <button type="button" className="tombol tombol-garis min-h-11 py-2" aria-expanded={panel} aria-controls={idPanel} onClick={() => setPanel((v) => !v)}>
             {panel ? 'Tutup saringan' : 'Saring'}
-            {chip.length > 0 && <span className="rounded-full bg-daun px-2 py-0.5 text-[0.72rem] text-white">{chip.length}</span>}
+            {chip.length > 0 && <span className="rounded-full bg-daun px-2 py-0.5 text-[0.75rem] text-white">{chip.length}</span>}
           </button>
           <label className="ms-auto flex items-center gap-2 text-[0.9rem]">
             <span className="text-tinta-2">Urutkan</span>
@@ -218,7 +218,7 @@ export default function Katalog() {
                 <div className="clear-both grid gap-0.5 pt-2">
                   {[{ id: '', nama: 'Semua', ket: '' }, ...udara].map((u) => (
                     <label key={u.id || 'semua'} className="flex min-h-10 cursor-pointer items-start gap-3 rounded-lg px-1 py-1.5 hover:bg-kapur-2">
-                      <input type="radio" name="udara" className="mt-0.5 h-[1.1rem] w-[1.1rem] accent-[#1f5c43]" checked={f.udara === u.id} onChange={() => ubah({ udara: u.id })} />
+                      <input type="radio" name="udara" className="mt-0.5 h-[1.25rem] w-[1.25rem] accent-[#1f5c43]" checked={f.udara === u.id} onChange={() => ubah({ udara: u.id })} />
                       <span className="leading-tight">
                         {u.nama}
                         {u.ket && <span className="block text-[0.8rem] text-tinta-2">{u.ket}</span>}
@@ -253,7 +253,7 @@ export default function Katalog() {
             <div className="clear-both grid gap-0.5 pt-2">
               {[{ id: '', label: 'Semua harga' }, ...rentangFilter].map((x) => (
                 <label key={x.id || 'semua'} className="flex min-h-10 cursor-pointer items-center gap-3 rounded-lg px-1 py-1 hover:bg-kapur-2">
-                  <input type="radio" name="harga" className="h-[1.1rem] w-[1.1rem] accent-[#1f5c43]" checked={f.harga === x.id} onChange={() => ubah({ harga: x.id })} />
+                  <input type="radio" name="harga" className="h-[1.25rem] w-[1.25rem] accent-[#1f5c43]" checked={f.harga === x.id} onChange={() => ubah({ harga: x.id })} />
                   <span>{x.label}</span>
                 </label>
               ))}

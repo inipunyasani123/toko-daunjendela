@@ -19,7 +19,7 @@ export default function PilihCahaya({ judulId = 'judul-pilih-cahaya' }) {
             >
               <span aria-hidden="true" className="h-7 w-full shrink-0 rounded-lg sm:h-10" style={{ background: WARNA_CAHAYA[n], boxShadow: 'inset 0 0 0 1px rgb(21 50 42 / .18)' }} />
               <span className="min-w-0 leading-tight">
-                <span className="block text-[0.74rem] font-semibold leading-tight group-hover:underline sm:text-[0.92rem]">{cahaya[n - 1].nama}</span>
+                <span className="block text-[0.75rem] font-semibold leading-tight group-hover:underline sm:text-[0.92rem]">{cahaya[n - 1].nama}</span>
                 <span className="mt-0.5 hidden text-[0.78rem] text-tinta-2 sm:block">{jumlah(n)} tanaman betah</span>
                 <span className="sr-only sm:hidden">, {jumlah(n)} tanaman</span>
               </span>
